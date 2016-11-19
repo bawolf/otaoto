@@ -1,0 +1,725 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/bryantwolf/workspace/once',
+5 verbose install   [ 'phoenix',
+5 verbose install     'phoenix_html',
+5 verbose install     'babel-brunch',
+5 verbose install     'brunch',
+5 verbose install     'clean-css-brunch',
+5 verbose install     'css-brunch',
+5 verbose install     'javascript-brunch',
+5 verbose install     'uglify-js-brunch' ] ]
+6 info preinstall @
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'phoenix@file:deps/phoenix', null ]
+9 verbose cache add name=undefined spec="phoenix@file:deps/phoenix" args=["phoenix@file:deps/phoenix",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: null,
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'phoenix@file:deps/phoenix',
+10 verbose parsed url   path: 'phoenix@file:deps/phoenix',
+10 verbose parsed url   href: 'phoenix@file:deps/phoenix' }
+11 verbose cache add [ 'phoenix_html@file:deps/phoenix_html', null ]
+12 verbose cache add name=undefined spec="phoenix_html@file:deps/phoenix_html" args=["phoenix_html@file:deps/phoenix_html",null]
+13 verbose parsed url { protocol: null,
+13 verbose parsed url   slashes: null,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: null,
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: null,
+13 verbose parsed url   hash: null,
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: 'phoenix_html@file:deps/phoenix_html',
+13 verbose parsed url   path: 'phoenix_html@file:deps/phoenix_html',
+13 verbose parsed url   href: 'phoenix_html@file:deps/phoenix_html' }
+14 verbose cache add name="phoenix" spec="file:deps/phoenix" args=["phoenix","file:deps/phoenix"]
+15 verbose parsed url { protocol: 'file:',
+15 verbose parsed url   slashes: null,
+15 verbose parsed url   auth: null,
+15 verbose parsed url   host: null,
+15 verbose parsed url   port: null,
+15 verbose parsed url   hostname: null,
+15 verbose parsed url   hash: null,
+15 verbose parsed url   search: null,
+15 verbose parsed url   query: null,
+15 verbose parsed url   pathname: 'deps/phoenix',
+15 verbose parsed url   path: 'deps/phoenix',
+15 verbose parsed url   href: 'file:deps/phoenix' }
+16 verbose addNamed [ 'phoenix', 'file:deps/phoenix' ]
+17 verbose addNamed [ null, null ]
+18 verbose cache add [ 'brunch@2.7.4', null ]
+19 verbose cache add name=undefined spec="brunch@2.7.4" args=["brunch@2.7.4",null]
+20 verbose parsed url { protocol: null,
+20 verbose parsed url   slashes: null,
+20 verbose parsed url   auth: null,
+20 verbose parsed url   host: null,
+20 verbose parsed url   port: null,
+20 verbose parsed url   hostname: null,
+20 verbose parsed url   hash: null,
+20 verbose parsed url   search: null,
+20 verbose parsed url   query: null,
+20 verbose parsed url   pathname: 'brunch@2.7.4',
+20 verbose parsed url   path: 'brunch@2.7.4',
+20 verbose parsed url   href: 'brunch@2.7.4' }
+21 verbose cache add name="brunch" spec="2.7.4" args=["brunch","2.7.4"]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: '2.7.4',
+22 verbose parsed url   path: '2.7.4',
+22 verbose parsed url   href: '2.7.4' }
+23 verbose addNamed [ 'brunch', '2.7.4' ]
+24 verbose addNamed [ '2.7.4', '2.7.4' ]
+25 verbose cache add [ 'babel-brunch@~6.0.0', null ]
+26 verbose cache add name=undefined spec="babel-brunch@~6.0.0" args=["babel-brunch@~6.0.0",null]
+27 verbose parsed url { protocol: null,
+27 verbose parsed url   slashes: null,
+27 verbose parsed url   auth: null,
+27 verbose parsed url   host: null,
+27 verbose parsed url   port: null,
+27 verbose parsed url   hostname: null,
+27 verbose parsed url   hash: null,
+27 verbose parsed url   search: null,
+27 verbose parsed url   query: null,
+27 verbose parsed url   pathname: 'babel-brunch@~6.0.0',
+27 verbose parsed url   path: 'babel-brunch@~6.0.0',
+27 verbose parsed url   href: 'babel-brunch@~6.0.0' }
+28 verbose cache add name="babel-brunch" spec="~6.0.0" args=["babel-brunch","~6.0.0"]
+29 verbose parsed url { protocol: null,
+29 verbose parsed url   slashes: null,
+29 verbose parsed url   auth: null,
+29 verbose parsed url   host: null,
+29 verbose parsed url   port: null,
+29 verbose parsed url   hostname: null,
+29 verbose parsed url   hash: null,
+29 verbose parsed url   search: null,
+29 verbose parsed url   query: null,
+29 verbose parsed url   pathname: '~6.0.0',
+29 verbose parsed url   path: '~6.0.0',
+29 verbose parsed url   href: '~6.0.0' }
+30 verbose addNamed [ 'babel-brunch', '~6.0.0' ]
+31 verbose addNamed [ null, '>=6.0.0-0 <6.1.0-0' ]
+32 verbose cache add [ 'clean-css-brunch@~2.0.0', null ]
+33 verbose cache add name=undefined spec="clean-css-brunch@~2.0.0" args=["clean-css-brunch@~2.0.0",null]
+34 verbose parsed url { protocol: null,
+34 verbose parsed url   slashes: null,
+34 verbose parsed url   auth: null,
+34 verbose parsed url   host: null,
+34 verbose parsed url   port: null,
+34 verbose parsed url   hostname: null,
+34 verbose parsed url   hash: null,
+34 verbose parsed url   search: null,
+34 verbose parsed url   query: null,
+34 verbose parsed url   pathname: 'clean-css-brunch@~2.0.0',
+34 verbose parsed url   path: 'clean-css-brunch@~2.0.0',
+34 verbose parsed url   href: 'clean-css-brunch@~2.0.0' }
+35 verbose cache add name="clean-css-brunch" spec="~2.0.0" args=["clean-css-brunch","~2.0.0"]
+36 verbose parsed url { protocol: null,
+36 verbose parsed url   slashes: null,
+36 verbose parsed url   auth: null,
+36 verbose parsed url   host: null,
+36 verbose parsed url   port: null,
+36 verbose parsed url   hostname: null,
+36 verbose parsed url   hash: null,
+36 verbose parsed url   search: null,
+36 verbose parsed url   query: null,
+36 verbose parsed url   pathname: '~2.0.0',
+36 verbose parsed url   path: '~2.0.0',
+36 verbose parsed url   href: '~2.0.0' }
+37 verbose addNamed [ 'clean-css-brunch', '~2.0.0' ]
+38 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+39 verbose cache add name="phoenix_html" spec="file:deps/phoenix_html" args=["phoenix_html","file:deps/phoenix_html"]
+40 verbose parsed url { protocol: 'file:',
+40 verbose parsed url   slashes: null,
+40 verbose parsed url   auth: null,
+40 verbose parsed url   host: null,
+40 verbose parsed url   port: null,
+40 verbose parsed url   hostname: null,
+40 verbose parsed url   hash: null,
+40 verbose parsed url   search: null,
+40 verbose parsed url   query: null,
+40 verbose parsed url   pathname: 'deps/phoenix_html',
+40 verbose parsed url   path: 'deps/phoenix_html',
+40 verbose parsed url   href: 'file:deps/phoenix_html' }
+41 verbose addNamed [ 'phoenix_html', 'file:deps/phoenix_html' ]
+42 verbose addNamed [ null, null ]
+43 silly lockFile 25706d37-phoenix-file-deps-phoenix phoenix@file:deps/phoenix
+44 verbose lock phoenix@file:deps/phoenix /Users/bryantwolf/.npm/25706d37-phoenix-file-deps-phoenix.lock
+45 silly lockFile 34741395-brunch-2-7-4 brunch@2.7.4
+46 verbose lock brunch@2.7.4 /Users/bryantwolf/.npm/34741395-brunch-2-7-4.lock
+47 silly lockFile 6b74a846-babel-brunch-6-0-0 babel-brunch@~6.0.0
+48 verbose lock babel-brunch@~6.0.0 /Users/bryantwolf/.npm/6b74a846-babel-brunch-6-0-0.lock
+49 verbose cache add [ 'css-brunch@~2.0.0', null ]
+50 verbose cache add name=undefined spec="css-brunch@~2.0.0" args=["css-brunch@~2.0.0",null]
+51 verbose parsed url { protocol: null,
+51 verbose parsed url   slashes: null,
+51 verbose parsed url   auth: null,
+51 verbose parsed url   host: null,
+51 verbose parsed url   port: null,
+51 verbose parsed url   hostname: null,
+51 verbose parsed url   hash: null,
+51 verbose parsed url   search: null,
+51 verbose parsed url   query: null,
+51 verbose parsed url   pathname: 'css-brunch@~2.0.0',
+51 verbose parsed url   path: 'css-brunch@~2.0.0',
+51 verbose parsed url   href: 'css-brunch@~2.0.0' }
+52 verbose cache add name="css-brunch" spec="~2.0.0" args=["css-brunch","~2.0.0"]
+53 verbose parsed url { protocol: null,
+53 verbose parsed url   slashes: null,
+53 verbose parsed url   auth: null,
+53 verbose parsed url   host: null,
+53 verbose parsed url   port: null,
+53 verbose parsed url   hostname: null,
+53 verbose parsed url   hash: null,
+53 verbose parsed url   search: null,
+53 verbose parsed url   query: null,
+53 verbose parsed url   pathname: '~2.0.0',
+53 verbose parsed url   path: '~2.0.0',
+53 verbose parsed url   href: '~2.0.0' }
+54 verbose addNamed [ 'css-brunch', '~2.0.0' ]
+55 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+56 silly lockFile 1da32090-css-brunch-2-0-0 css-brunch@~2.0.0
+57 verbose lock css-brunch@~2.0.0 /Users/bryantwolf/.npm/1da32090-css-brunch-2-0-0.lock
+58 verbose cache add [ 'javascript-brunch@~2.0.0', null ]
+59 verbose cache add name=undefined spec="javascript-brunch@~2.0.0" args=["javascript-brunch@~2.0.0",null]
+60 verbose parsed url { protocol: null,
+60 verbose parsed url   slashes: null,
+60 verbose parsed url   auth: null,
+60 verbose parsed url   host: null,
+60 verbose parsed url   port: null,
+60 verbose parsed url   hostname: null,
+60 verbose parsed url   hash: null,
+60 verbose parsed url   search: null,
+60 verbose parsed url   query: null,
+60 verbose parsed url   pathname: 'javascript-brunch@~2.0.0',
+60 verbose parsed url   path: 'javascript-brunch@~2.0.0',
+60 verbose parsed url   href: 'javascript-brunch@~2.0.0' }
+61 verbose cache add name="javascript-brunch" spec="~2.0.0" args=["javascript-brunch","~2.0.0"]
+62 verbose parsed url { protocol: null,
+62 verbose parsed url   slashes: null,
+62 verbose parsed url   auth: null,
+62 verbose parsed url   host: null,
+62 verbose parsed url   port: null,
+62 verbose parsed url   hostname: null,
+62 verbose parsed url   hash: null,
+62 verbose parsed url   search: null,
+62 verbose parsed url   query: null,
+62 verbose parsed url   pathname: '~2.0.0',
+62 verbose parsed url   path: '~2.0.0',
+62 verbose parsed url   href: '~2.0.0' }
+63 verbose addNamed [ 'javascript-brunch', '~2.0.0' ]
+64 verbose addNamed [ null, '>=2.0.0-0 <2.1.0-0' ]
+65 silly lockFile ba3f7e2f-javascript-brunch-2-0-0 javascript-brunch@~2.0.0
+66 verbose lock javascript-brunch@~2.0.0 /Users/bryantwolf/.npm/ba3f7e2f-javascript-brunch-2-0-0.lock
+67 verbose cache add [ 'uglify-js-brunch@~2.0.1', null ]
+68 verbose cache add name=undefined spec="uglify-js-brunch@~2.0.1" args=["uglify-js-brunch@~2.0.1",null]
+69 verbose parsed url { protocol: null,
+69 verbose parsed url   slashes: null,
+69 verbose parsed url   auth: null,
+69 verbose parsed url   host: null,
+69 verbose parsed url   port: null,
+69 verbose parsed url   hostname: null,
+69 verbose parsed url   hash: null,
+69 verbose parsed url   search: null,
+69 verbose parsed url   query: null,
+69 verbose parsed url   pathname: 'uglify-js-brunch@~2.0.1',
+69 verbose parsed url   path: 'uglify-js-brunch@~2.0.1',
+69 verbose parsed url   href: 'uglify-js-brunch@~2.0.1' }
+70 verbose cache add name="uglify-js-brunch" spec="~2.0.1" args=["uglify-js-brunch","~2.0.1"]
+71 verbose parsed url { protocol: null,
+71 verbose parsed url   slashes: null,
+71 verbose parsed url   auth: null,
+71 verbose parsed url   host: null,
+71 verbose parsed url   port: null,
+71 verbose parsed url   hostname: null,
+71 verbose parsed url   hash: null,
+71 verbose parsed url   search: null,
+71 verbose parsed url   query: null,
+71 verbose parsed url   pathname: '~2.0.1',
+71 verbose parsed url   path: '~2.0.1',
+71 verbose parsed url   href: '~2.0.1' }
+72 verbose addNamed [ 'uglify-js-brunch', '~2.0.1' ]
+73 verbose addNamed [ null, '>=2.0.1-0 <2.1.0-0' ]
+74 silly lockFile d368487a-uglify-js-brunch-2-0-1 uglify-js-brunch@~2.0.1
+75 verbose lock uglify-js-brunch@~2.0.1 /Users/bryantwolf/.npm/d368487a-uglify-js-brunch-2-0-1.lock
+76 silly lockFile 2cc3d744-clean-css-brunch-2-0-0 clean-css-brunch@~2.0.0
+77 verbose lock clean-css-brunch@~2.0.0 /Users/bryantwolf/.npm/2cc3d744-clean-css-brunch-2-0-0.lock
+78 silly lockFile 3d88e48d-enix-html-file-deps-phoenix-html phoenix_html@file:deps/phoenix_html
+79 verbose lock phoenix_html@file:deps/phoenix_html /Users/bryantwolf/.npm/3d88e48d-enix-html-file-deps-phoenix-html.lock
+80 info addNameTag [ 'phoenix', 'file:deps/phoenix' ]
+81 silly addNameRange { name: 'babel-brunch',
+81 silly addNameRange   range: '>=6.0.0-0 <6.1.0-0',
+81 silly addNameRange   hasData: false }
+82 silly addNameRange { name: 'css-brunch',
+82 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+82 silly addNameRange   hasData: false }
+83 silly addNameRange { name: 'javascript-brunch',
+83 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+83 silly addNameRange   hasData: false }
+84 verbose url raw phoenix
+85 verbose url resolving [ 'https://registry.npmjs.org/', './phoenix' ]
+86 verbose url resolved https://registry.npmjs.org/phoenix
+87 info trying registry request attempt 1 at 16:39:11
+88 http GET https://registry.npmjs.org/phoenix
+89 verbose url raw brunch/2.7.4
+90 verbose url resolving [ 'https://registry.npmjs.org/', './brunch/2.7.4' ]
+91 verbose url resolved https://registry.npmjs.org/brunch/2.7.4
+92 info trying registry request attempt 1 at 16:39:11
+93 http GET https://registry.npmjs.org/brunch/2.7.4
+94 verbose url raw babel-brunch
+95 verbose url resolving [ 'https://registry.npmjs.org/', './babel-brunch' ]
+96 verbose url resolved https://registry.npmjs.org/babel-brunch
+97 info trying registry request attempt 1 at 16:39:11
+98 http GET https://registry.npmjs.org/babel-brunch
+99 verbose url raw css-brunch
+100 verbose url resolving [ 'https://registry.npmjs.org/', './css-brunch' ]
+101 verbose url resolved https://registry.npmjs.org/css-brunch
+102 info trying registry request attempt 1 at 16:39:11
+103 http GET https://registry.npmjs.org/css-brunch
+104 silly addNameRange { name: 'clean-css-brunch',
+104 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+104 silly addNameRange   hasData: false }
+105 silly addNameRange { name: 'uglify-js-brunch',
+105 silly addNameRange   range: '>=2.0.1-0 <2.1.0-0',
+105 silly addNameRange   hasData: false }
+106 info addNameTag [ 'phoenix_html', 'file:deps/phoenix_html' ]
+107 verbose url raw javascript-brunch
+108 verbose url resolving [ 'https://registry.npmjs.org/', './javascript-brunch' ]
+109 verbose url resolved https://registry.npmjs.org/javascript-brunch
+110 info trying registry request attempt 1 at 16:39:11
+111 http GET https://registry.npmjs.org/javascript-brunch
+112 verbose url raw clean-css-brunch
+113 verbose url resolving [ 'https://registry.npmjs.org/', './clean-css-brunch' ]
+114 verbose url resolved https://registry.npmjs.org/clean-css-brunch
+115 info trying registry request attempt 1 at 16:39:11
+116 http GET https://registry.npmjs.org/clean-css-brunch
+117 verbose url raw phoenix_html
+118 verbose url resolving [ 'https://registry.npmjs.org/', './phoenix_html' ]
+119 verbose url resolved https://registry.npmjs.org/phoenix_html
+120 info trying registry request attempt 1 at 16:39:11
+121 http GET https://registry.npmjs.org/phoenix_html
+122 verbose url raw uglify-js-brunch
+123 verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js-brunch' ]
+124 verbose url resolved https://registry.npmjs.org/uglify-js-brunch
+125 info trying registry request attempt 1 at 16:39:11
+126 http GET https://registry.npmjs.org/uglify-js-brunch
+127 http 200 https://registry.npmjs.org/babel-brunch
+128 silly registry.get cb [ 200,
+128 silly registry.get   { server: 'nginx/1.10.1',
+128 silly registry.get     'content-type': 'application/json',
+128 silly registry.get     'last-modified': 'Wed, 17 Aug 2016 00:56:50 GMT',
+128 silly registry.get     etag: '"57b3b652-4e24"',
+128 silly registry.get     'cache-control': 'max-age=300',
+128 silly registry.get     'content-length': '20004',
+128 silly registry.get     'accept-ranges': 'bytes',
+128 silly registry.get     date: 'Sat, 19 Nov 2016 21:39:08 GMT',
+128 silly registry.get     via: '1.1 varnish',
+128 silly registry.get     age: '0',
+128 silly registry.get     connection: 'keep-alive',
+128 silly registry.get     'x-served-by': 'cache-atl6249-ATL',
+128 silly registry.get     'x-cache': 'MISS',
+128 silly registry.get     'x-cache-hits': '0',
+128 silly registry.get     'x-timer': 'S1479591548.806567,VS0,VE77',
+128 silly registry.get     vary: 'Accept-Encoding' } ]
+129 silly addNameRange number 2 { name: 'babel-brunch',
+129 silly addNameRange   range: '>=6.0.0-0 <6.1.0-0',
+129 silly addNameRange   hasData: true }
+130 silly addNameRange versions [ 'babel-brunch',
+130 silly addNameRange   [ '4.0.0',
+130 silly addNameRange     '5.0.0',
+130 silly addNameRange     '5.0.1',
+130 silly addNameRange     '5.1.0',
+130 silly addNameRange     '5.1.1',
+130 silly addNameRange     '5.1.2',
+130 silly addNameRange     '6.0.0',
+130 silly addNameRange     '6.0.1',
+130 silly addNameRange     '6.0.2',
+130 silly addNameRange     '6.0.3',
+130 silly addNameRange     '6.0.4',
+130 silly addNameRange     '6.0.5',
+130 silly addNameRange     '6.0.6' ] ]
+131 verbose addNamed [ 'babel-brunch', '6.0.6' ]
+132 verbose addNamed [ '6.0.6', '6.0.6' ]
+133 silly lockFile cd22ecc2-babel-brunch-6-0-6 babel-brunch@6.0.6
+134 verbose lock babel-brunch@6.0.6 /Users/bryantwolf/.npm/cd22ecc2-babel-brunch-6-0-6.lock
+135 silly lockFile 7d1ae019-el-brunch-babel-brunch-6-0-6-tgz https://registry.npmjs.org/babel-brunch/-/babel-brunch-6.0.6.tgz
+136 verbose lock https://registry.npmjs.org/babel-brunch/-/babel-brunch-6.0.6.tgz /Users/bryantwolf/.npm/7d1ae019-el-brunch-babel-brunch-6-0-6-tgz.lock
+137 verbose addRemoteTarball [ 'https://registry.npmjs.org/babel-brunch/-/babel-brunch-6.0.6.tgz',
+137 verbose addRemoteTarball   '415c3fdc77d9b98281d2e15f3f3352c0f4818c6e' ]
+138 info retry fetch attempt 1 at 16:39:12
+139 verbose fetch to= /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/tmp.tgz
+140 http GET https://registry.npmjs.org/babel-brunch/-/babel-brunch-6.0.6.tgz
+141 http 200 https://registry.npmjs.org/phoenix
+142 silly registry.get cb [ 200,
+142 silly registry.get   { server: 'nginx/1.10.1',
+142 silly registry.get     'content-type': 'application/json',
+142 silly registry.get     'last-modified': 'Thu, 20 Oct 2016 04:07:33 GMT',
+142 silly registry.get     etag: '"58084305-24ba"',
+142 silly registry.get     'cache-control': 'max-age=300',
+142 silly registry.get     'content-length': '9402',
+142 silly registry.get     'accept-ranges': 'bytes',
+142 silly registry.get     date: 'Sat, 19 Nov 2016 21:39:09 GMT',
+142 silly registry.get     via: '1.1 varnish',
+142 silly registry.get     age: '0',
+142 silly registry.get     connection: 'keep-alive',
+142 silly registry.get     'x-served-by': 'cache-atl6238-ATL',
+142 silly registry.get     'x-cache': 'MISS',
+142 silly registry.get     'x-cache-hits': '0',
+142 silly registry.get     'x-timer': 'S1479591548.812571,VS0,VE191',
+142 silly registry.get     vary: 'Accept-Encoding' } ]
+143 info maybeGithub Attempting file:deps/phoenix from git://github.com/file:deps/phoenix
+144 silly lockFile 6d5f9840-git-github-com-file-deps-phoenix git://github.com/file:deps/phoenix
+145 verbose lock git://github.com/file:deps/phoenix /Users/bryantwolf/.npm/6d5f9840-git-github-com-file-deps-phoenix.lock
+146 verbose addRemoteGit [ 'git://github.com/file:deps/phoenix', 'master' ]
+147 http 200 https://registry.npmjs.org/clean-css-brunch
+148 silly registry.get cb [ 200,
+148 silly registry.get   { server: 'nginx/1.10.1',
+148 silly registry.get     'content-type': 'application/json',
+148 silly registry.get     'last-modified': 'Fri, 11 Nov 2016 16:54:54 GMT',
+148 silly registry.get     etag: '"5825f7de-3f29"',
+148 silly registry.get     'cache-control': 'max-age=300',
+148 silly registry.get     'content-length': '16169',
+148 silly registry.get     'accept-ranges': 'bytes',
+148 silly registry.get     date: 'Sat, 19 Nov 2016 21:39:09 GMT',
+148 silly registry.get     via: '1.1 varnish',
+148 silly registry.get     age: '0',
+148 silly registry.get     connection: 'keep-alive',
+148 silly registry.get     'x-served-by': 'cache-atl6249-ATL',
+148 silly registry.get     'x-cache': 'MISS',
+148 silly registry.get     'x-cache-hits': '0',
+148 silly registry.get     'x-timer': 'S1479591548.954175,VS0,VE76',
+148 silly registry.get     vary: 'Accept-Encoding' } ]
+149 silly addNameRange number 2 { name: 'clean-css-brunch',
+149 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+149 silly addNameRange   hasData: true }
+150 silly addNameRange versions [ 'clean-css-brunch',
+150 silly addNameRange   [ '1.0.0',
+150 silly addNameRange     '1.1.0',
+150 silly addNameRange     '1.1.1',
+150 silly addNameRange     '1.3.0',
+150 silly addNameRange     '1.4.0',
+150 silly addNameRange     '1.5.0',
+150 silly addNameRange     '1.5.1',
+150 silly addNameRange     '1.6.0',
+150 silly addNameRange     '1.7.0',
+150 silly addNameRange     '1.7.1',
+150 silly addNameRange     '1.7.2',
+150 silly addNameRange     '1.8.0',
+150 silly addNameRange     '2.0.0' ] ]
+151 verbose addNamed [ 'clean-css-brunch', '2.0.0' ]
+152 verbose addNamed [ '2.0.0', '2.0.0' ]
+153 silly lockFile 9c5c8935-clean-css-brunch-2-0-0 clean-css-brunch@2.0.0
+154 verbose lock clean-css-brunch@2.0.0 /Users/bryantwolf/.npm/9c5c8935-clean-css-brunch-2-0-0.lock
+155 silly lockFile 77fb6507-runch-clean-css-brunch-2-0-0-tgz https://registry.npmjs.org/clean-css-brunch/-/clean-css-brunch-2.0.0.tgz
+156 verbose lock https://registry.npmjs.org/clean-css-brunch/-/clean-css-brunch-2.0.0.tgz /Users/bryantwolf/.npm/77fb6507-runch-clean-css-brunch-2-0-0-tgz.lock
+157 verbose addRemoteTarball [ 'https://registry.npmjs.org/clean-css-brunch/-/clean-css-brunch-2.0.0.tgz',
+157 verbose addRemoteTarball   '37c27476c4708a0094cd646c9c464ac1970c4b17' ]
+158 info retry fetch attempt 1 at 16:39:12
+159 verbose fetch to= /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/tmp.tgz
+160 http GET https://registry.npmjs.org/clean-css-brunch/-/clean-css-brunch-2.0.0.tgz
+161 http 200 https://registry.npmjs.org/css-brunch
+162 silly registry.get cb [ 200,
+162 silly registry.get   { server: 'nginx/1.10.1',
+162 silly registry.get     'content-type': 'application/json',
+162 silly registry.get     'last-modified': 'Fri, 11 Nov 2016 16:54:40 GMT',
+162 silly registry.get     etag: '"5825f7d0-3779"',
+162 silly registry.get     'cache-control': 'max-age=300',
+162 silly registry.get     'content-length': '14201',
+162 silly registry.get     'accept-ranges': 'bytes',
+162 silly registry.get     date: 'Sat, 19 Nov 2016 21:39:09 GMT',
+162 silly registry.get     via: '1.1 varnish',
+162 silly registry.get     age: '0',
+162 silly registry.get     connection: 'keep-alive',
+162 silly registry.get     'x-served-by': 'cache-atl6246-ATL',
+162 silly registry.get     'x-cache': 'MISS',
+162 silly registry.get     'x-cache-hits': '0',
+162 silly registry.get     'x-timer': 'S1479591548.774836,VS0,VE248',
+162 silly registry.get     vary: 'Accept-Encoding' } ]
+163 silly addNameRange number 2 { name: 'css-brunch',
+163 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+163 silly addNameRange   hasData: true }
+164 silly addNameRange versions [ 'css-brunch',
+164 silly addNameRange   [ '1.0.0',
+164 silly addNameRange     '1.1.0',
+164 silly addNameRange     '1.1.1',
+164 silly addNameRange     '1.3.0',
+164 silly addNameRange     '1.5.0',
+164 silly addNameRange     '1.5.1',
+164 silly addNameRange     '1.6.0',
+164 silly addNameRange     '1.7.0',
+164 silly addNameRange     '2.0.0',
+164 silly addNameRange     '2.6.0',
+164 silly addNameRange     '2.6.1' ] ]
+165 verbose addNamed [ 'css-brunch', '2.0.0' ]
+166 verbose addNamed [ '2.0.0', '2.0.0' ]
+167 silly lockFile 708400cd-css-brunch-2-0-0 css-brunch@2.0.0
+168 verbose lock css-brunch@2.0.0 /Users/bryantwolf/.npm/708400cd-css-brunch-2-0-0.lock
+169 silly lockFile c0e3b9bc--css-brunch-css-brunch-2-0-0-tgz https://registry.npmjs.org/css-brunch/-/css-brunch-2.0.0.tgz
+170 verbose lock https://registry.npmjs.org/css-brunch/-/css-brunch-2.0.0.tgz /Users/bryantwolf/.npm/c0e3b9bc--css-brunch-css-brunch-2-0-0-tgz.lock
+171 verbose addRemoteTarball [ 'https://registry.npmjs.org/css-brunch/-/css-brunch-2.0.0.tgz',
+171 verbose addRemoteTarball   'a4c6bec7d7f6c8fa4769a72ee95cfdfc50c54157' ]
+172 info retry fetch attempt 1 at 16:39:12
+173 verbose fetch to= /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/tmp.tgz
+174 http GET https://registry.npmjs.org/css-brunch/-/css-brunch-2.0.0.tgz
+175 http 200 https://registry.npmjs.org/javascript-brunch
+176 silly registry.get cb [ 200,
+176 silly registry.get   { server: 'nginx/1.10.1',
+176 silly registry.get     'content-type': 'application/json',
+176 silly registry.get     'last-modified': 'Fri, 11 Nov 2016 16:54:40 GMT',
+176 silly registry.get     etag: '"5825f7d0-35b6"',
+176 silly registry.get     'cache-control': 'max-age=300',
+176 silly registry.get     'content-length': '13750',
+176 silly registry.get     'accept-ranges': 'bytes',
+176 silly registry.get     date: 'Sat, 19 Nov 2016 21:39:09 GMT',
+176 silly registry.get     via: '1.1 varnish',
+176 silly registry.get     age: '0',
+176 silly registry.get     connection: 'keep-alive',
+176 silly registry.get     'x-served-by': 'cache-atl6234-ATL',
+176 silly registry.get     'x-cache': 'MISS',
+176 silly registry.get     'x-cache-hits': '0',
+176 silly registry.get     'x-timer': 'S1479591548.806098,VS0,VE225',
+176 silly registry.get     vary: 'Accept-Encoding' } ]
+177 silly addNameRange number 2 { name: 'javascript-brunch',
+177 silly addNameRange   range: '>=2.0.0-0 <2.1.0-0',
+177 silly addNameRange   hasData: true }
+178 silly addNameRange versions [ 'javascript-brunch',
+178 silly addNameRange   [ '1.0.0',
+178 silly addNameRange     '1.1.0',
+178 silly addNameRange     '1.1.1',
+178 silly addNameRange     '1.3.0',
+178 silly addNameRange     '1.5.0',
+178 silly addNameRange     '1.5.1',
+178 silly addNameRange     '1.6.0',
+178 silly addNameRange     '1.7.0',
+178 silly addNameRange     '1.7.1',
+178 silly addNameRange     '1.8.0',
+178 silly addNameRange     '2.0.0' ] ]
+179 verbose addNamed [ 'javascript-brunch', '2.0.0' ]
+180 verbose addNamed [ '2.0.0', '2.0.0' ]
+181 silly lockFile 67fa401c-javascript-brunch-2-0-0 javascript-brunch@2.0.0
+182 verbose lock javascript-brunch@2.0.0 /Users/bryantwolf/.npm/67fa401c-javascript-brunch-2-0-0.lock
+183 silly lockFile 2905be36-unch-javascript-brunch-2-0-0-tgz https://registry.npmjs.org/javascript-brunch/-/javascript-brunch-2.0.0.tgz
+184 verbose lock https://registry.npmjs.org/javascript-brunch/-/javascript-brunch-2.0.0.tgz /Users/bryantwolf/.npm/2905be36-unch-javascript-brunch-2-0-0-tgz.lock
+185 verbose addRemoteTarball [ 'https://registry.npmjs.org/javascript-brunch/-/javascript-brunch-2.0.0.tgz',
+185 verbose addRemoteTarball   '831e1d6fa8ff5decb2b0872024f1ad447b963ce0' ]
+186 info retry fetch attempt 1 at 16:39:12
+187 verbose fetch to= /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/tmp.tgz
+188 http GET https://registry.npmjs.org/javascript-brunch/-/javascript-brunch-2.0.0.tgz
+189 http 200 https://registry.npmjs.org/babel-brunch/-/babel-brunch-6.0.6.tgz
+190 verbose tar unpack /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/tmp.tgz
+191 silly lockFile 1c040489-52103-0-5518710613250732-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package
+192 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package /Users/bryantwolf/.npm/1c040489-52103-0-5518710613250732-package.lock
+193 silly lockFile d8186006-52103-0-5518710613250732-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/tmp.tgz
+194 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/tmp.tgz /Users/bryantwolf/.npm/d8186006-52103-0-5518710613250732-tmp-tgz.lock
+195 silly gunzTarPerm modes [ '755', '644' ]
+196 silly gunzTarPerm extractEntry package.json
+197 silly gunzTarPerm extractEntry README.md
+198 silly gunzTarPerm extractEntry LICENSE
+199 silly gunzTarPerm extractEntry index.js
+200 silly lockFile 1c040489-52103-0-5518710613250732-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package
+201 silly lockFile 1c040489-52103-0-5518710613250732-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package
+202 silly lockFile d8186006-52103-0-5518710613250732-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/tmp.tgz
+203 silly lockFile d8186006-52103-0-5518710613250732-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/tmp.tgz
+204 verbose tar pack [ '/Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz',
+204 verbose tar pack   '/var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package' ]
+205 verbose tarball /Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz
+206 verbose folder /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package
+207 silly lockFile 1c040489-52103-0-5518710613250732-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package
+208 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package /Users/bryantwolf/.npm/1c040489-52103-0-5518710613250732-package.lock
+209 silly lockFile 52afa52a-m-babel-brunch-6-0-6-package-tgz tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz
+210 verbose lock tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz /Users/bryantwolf/.npm/52afa52a-m-babel-brunch-6-0-6-package-tgz.lock
+211 http 200 https://registry.npmjs.org/brunch/2.7.4
+212 silly registry.get cb [ 200,
+212 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+212 silly registry.get     etag: '"BUX39FO6P752P1DFJCD2K32UM"',
+212 silly registry.get     'content-type': 'application/json',
+212 silly registry.get     'cache-control': 'max-age=300',
+212 silly registry.get     'content-length': '2183',
+212 silly registry.get     'accept-ranges': 'bytes',
+212 silly registry.get     date: 'Sat, 19 Nov 2016 21:39:09 GMT',
+212 silly registry.get     via: '1.1 varnish',
+212 silly registry.get     age: '0',
+212 silly registry.get     connection: 'keep-alive',
+212 silly registry.get     'x-served-by': 'cache-atl6221-ATL',
+212 silly registry.get     'x-cache': 'MISS',
+212 silly registry.get     'x-cache-hits': '0',
+212 silly registry.get     'x-timer': 'S1479591548.805917,VS0,VE329',
+212 silly registry.get     vary: 'Accept-Encoding' } ]
+213 silly lockFile 4af45fd5-pmjs-org-brunch-brunch-2-7-4-tgz https://registry.npmjs.org/brunch/-/brunch-2.7.4.tgz
+214 verbose lock https://registry.npmjs.org/brunch/-/brunch-2.7.4.tgz /Users/bryantwolf/.npm/4af45fd5-pmjs-org-brunch-brunch-2-7-4-tgz.lock
+215 verbose addRemoteTarball [ 'https://registry.npmjs.org/brunch/-/brunch-2.7.4.tgz',
+215 verbose addRemoteTarball   '961b3de71fc6b2ecbbcf08b5f578595c0752749a' ]
+216 silly lockFile 1c040489-52103-0-5518710613250732-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package
+217 silly lockFile 1c040489-52103-0-5518710613250732-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552103-0.5518710613250732/package
+218 info retry fetch attempt 1 at 16:39:12
+219 verbose fetch to= /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552312-0.9628348650876433/tmp.tgz
+220 silly lockFile 52afa52a-m-babel-brunch-6-0-6-package-tgz tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz
+221 silly lockFile 52afa52a-m-babel-brunch-6-0-6-package-tgz tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz
+222 http GET https://registry.npmjs.org/brunch/-/brunch-2.7.4.tgz
+223 silly lockFile 116e12e0-f-npm-babel-brunch-6-0-6-package /Users/bryantwolf/.npm/babel-brunch/6.0.6/package
+224 verbose lock /Users/bryantwolf/.npm/babel-brunch/6.0.6/package /Users/bryantwolf/.npm/116e12e0-f-npm-babel-brunch-6-0-6-package.lock
+225 silly lockFile 116e12e0-f-npm-babel-brunch-6-0-6-package /Users/bryantwolf/.npm/babel-brunch/6.0.6/package
+226 silly lockFile 116e12e0-f-npm-babel-brunch-6-0-6-package /Users/bryantwolf/.npm/babel-brunch/6.0.6/package
+227 verbose tar unpack /Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz
+228 silly lockFile 6fdd1493-f-npm-babel-brunch-6-0-6-package tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package
+229 verbose lock tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package /Users/bryantwolf/.npm/6fdd1493-f-npm-babel-brunch-6-0-6-package.lock
+230 silly lockFile 52afa52a-m-babel-brunch-6-0-6-package-tgz tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz
+231 verbose lock tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz /Users/bryantwolf/.npm/52afa52a-m-babel-brunch-6-0-6-package-tgz.lock
+232 silly gunzTarPerm modes [ '755', '644' ]
+233 silly gunzTarPerm extractEntry package.json
+234 silly gunzTarPerm extractEntry README.md
+235 silly gunzTarPerm extractEntry index.js
+236 silly lockFile 6fdd1493-f-npm-babel-brunch-6-0-6-package tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package
+237 silly lockFile 6fdd1493-f-npm-babel-brunch-6-0-6-package tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package
+238 silly lockFile 52afa52a-m-babel-brunch-6-0-6-package-tgz tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz
+239 silly lockFile 52afa52a-m-babel-brunch-6-0-6-package-tgz tar:///Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz
+240 verbose chmod /Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz 644
+241 verbose chown /Users/bryantwolf/.npm/babel-brunch/6.0.6/package.tgz [ 501, 20 ]
+242 silly lockFile 7d1ae019-el-brunch-babel-brunch-6-0-6-tgz https://registry.npmjs.org/babel-brunch/-/babel-brunch-6.0.6.tgz
+243 silly lockFile 7d1ae019-el-brunch-babel-brunch-6-0-6-tgz https://registry.npmjs.org/babel-brunch/-/babel-brunch-6.0.6.tgz
+244 silly lockFile cd22ecc2-babel-brunch-6-0-6 babel-brunch@6.0.6
+245 silly lockFile cd22ecc2-babel-brunch-6-0-6 babel-brunch@6.0.6
+246 silly lockFile 6b74a846-babel-brunch-6-0-0 babel-brunch@~6.0.0
+247 silly lockFile 6b74a846-babel-brunch-6-0-0 babel-brunch@~6.0.0
+248 verbose git clone git://github.com/file:deps/phoenix Cloning into bare repository '/Users/bryantwolf/.npm/_git-remotes/git-github-com-file-deps-phoenix-6d5f9840'...
+248 verbose git clone git://github.com/file:deps/phoenix fatal: remote error:
+248 verbose git clone git://github.com/file:deps/phoenix   file:deps/phoenix is not a valid repository name
+248 verbose git clone git://github.com/file:deps/phoenix   Email support@github.com for help
+249 silly lockFile 6d5f9840-git-github-com-file-deps-phoenix git://github.com/file:deps/phoenix
+250 silly lockFile 6d5f9840-git-github-com-file-deps-phoenix git://github.com/file:deps/phoenix
+251 info maybeGithub Attempting file:deps/phoenix from git+ssh://git@github.com:file:deps/phoenix
+252 silly lockFile c83d6c1a-git-github-com-file-deps-phoenix git@github.com:file:deps/phoenix
+253 verbose lock git@github.com:file:deps/phoenix /Users/bryantwolf/.npm/c83d6c1a-git-github-com-file-deps-phoenix.lock
+254 verbose addRemoteGit [ 'git@github.com:file:deps/phoenix', 'master' ]
+255 http 200 https://registry.npmjs.org/clean-css-brunch/-/clean-css-brunch-2.0.0.tgz
+256 verbose tar unpack /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/tmp.tgz
+257 silly lockFile 60752607-52220-0-7018734402954578-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package
+258 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package /Users/bryantwolf/.npm/60752607-52220-0-7018734402954578-package.lock
+259 silly lockFile 3d6ffb3e-52220-0-7018734402954578-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/tmp.tgz
+260 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/tmp.tgz /Users/bryantwolf/.npm/3d6ffb3e-52220-0-7018734402954578-tmp-tgz.lock
+261 silly gunzTarPerm modes [ '755', '644' ]
+262 silly gunzTarPerm extractEntry package.json
+263 silly gunzTarPerm extractEntry .npmignore
+264 silly gunzTarPerm extractEntry README.md
+265 silly gunzTarPerm extractEntry index.js
+266 silly gunzTarPerm extractEntry test.js
+267 silly gunzTarPerm extractEntry .eslintrc.json
+268 silly gunzTarPerm extractEntry CHANGELOG.md
+269 http 200 https://registry.npmjs.org/javascript-brunch/-/javascript-brunch-2.0.0.tgz
+270 http 200 https://registry.npmjs.org/css-brunch/-/css-brunch-2.0.0.tgz
+271 verbose tar unpack /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/tmp.tgz
+272 silly lockFile caca5487-52244-0-5801870746072382-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/package
+273 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/package /Users/bryantwolf/.npm/caca5487-52244-0-5801870746072382-package.lock
+274 silly lockFile fe2bc01d-52244-0-5801870746072382-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/tmp.tgz
+275 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/tmp.tgz /Users/bryantwolf/.npm/fe2bc01d-52244-0-5801870746072382-tmp-tgz.lock
+276 verbose tar unpack /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/tmp.tgz
+277 silly lockFile b0cdfcc6-2236-0-08728860830888152-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/package
+278 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/package /Users/bryantwolf/.npm/b0cdfcc6-2236-0-08728860830888152-package.lock
+279 silly lockFile 1f9553f9-2236-0-08728860830888152-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/tmp.tgz
+280 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/tmp.tgz /Users/bryantwolf/.npm/1f9553f9-2236-0-08728860830888152-tmp-tgz.lock
+281 silly gunzTarPerm modes [ '755', '644' ]
+282 silly gunzTarPerm modes [ '755', '644' ]
+283 silly gunzTarPerm extractEntry package.json
+284 silly gunzTarPerm extractEntry package.json
+285 silly gunzTarPerm extractEntry .npmignore
+286 silly gunzTarPerm extractEntry README.md
+287 silly gunzTarPerm extractEntry .npmignore
+288 silly gunzTarPerm extractEntry README.md
+289 silly gunzTarPerm extractEntry index.js
+290 silly gunzTarPerm extractEntry .eslintrc.json
+291 silly gunzTarPerm extractEntry index.js
+292 silly gunzTarPerm extractEntry test.js
+293 silly gunzTarPerm extractEntry CHANGELOG.md
+294 silly gunzTarPerm extractEntry .eslintrc.json
+295 silly gunzTarPerm extractEntry CHANGELOG.md
+296 silly lockFile 60752607-52220-0-7018734402954578-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package
+297 silly lockFile 60752607-52220-0-7018734402954578-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package
+298 silly lockFile 3d6ffb3e-52220-0-7018734402954578-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/tmp.tgz
+299 silly lockFile 3d6ffb3e-52220-0-7018734402954578-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/tmp.tgz
+300 verbose tar pack [ '/Users/bryantwolf/.npm/clean-css-brunch/2.0.0/package.tgz',
+300 verbose tar pack   '/var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package' ]
+301 verbose tarball /Users/bryantwolf/.npm/clean-css-brunch/2.0.0/package.tgz
+302 verbose folder /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package
+303 silly lockFile 60752607-52220-0-7018734402954578-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package
+304 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package /Users/bryantwolf/.npm/60752607-52220-0-7018734402954578-package.lock
+305 silly lockFile c85a55e9-ean-css-brunch-2-0-0-package-tgz tar:///Users/bryantwolf/.npm/clean-css-brunch/2.0.0/package.tgz
+306 verbose lock tar:///Users/bryantwolf/.npm/clean-css-brunch/2.0.0/package.tgz /Users/bryantwolf/.npm/c85a55e9-ean-css-brunch-2-0-0-package-tgz.lock
+307 silly lockFile caca5487-52244-0-5801870746072382-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/package
+308 silly lockFile caca5487-52244-0-5801870746072382-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/package
+309 silly lockFile fe2bc01d-52244-0-5801870746072382-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/tmp.tgz
+310 silly lockFile fe2bc01d-52244-0-5801870746072382-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/tmp.tgz
+311 http 200 https://registry.npmjs.org/brunch/-/brunch-2.7.4.tgz
+312 verbose tar pack [ '/Users/bryantwolf/.npm/javascript-brunch/2.0.0/package.tgz',
+312 verbose tar pack   '/var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/package' ]
+313 verbose tarball /Users/bryantwolf/.npm/javascript-brunch/2.0.0/package.tgz
+314 verbose folder /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/package
+315 silly lockFile caca5487-52244-0-5801870746072382-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/package
+316 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552244-0.5801870746072382/package /Users/bryantwolf/.npm/caca5487-52244-0-5801870746072382-package.lock
+317 silly lockFile 171ad309-ascript-brunch-2-0-0-package-tgz tar:///Users/bryantwolf/.npm/javascript-brunch/2.0.0/package.tgz
+318 verbose lock tar:///Users/bryantwolf/.npm/javascript-brunch/2.0.0/package.tgz /Users/bryantwolf/.npm/171ad309-ascript-brunch-2-0-0-package-tgz.lock
+319 silly lockFile b0cdfcc6-2236-0-08728860830888152-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/package
+320 silly lockFile b0cdfcc6-2236-0-08728860830888152-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/package
+321 silly lockFile 1f9553f9-2236-0-08728860830888152-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/tmp.tgz
+322 silly lockFile 1f9553f9-2236-0-08728860830888152-tmp-tgz tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/tmp.tgz
+323 verbose tar pack [ '/Users/bryantwolf/.npm/css-brunch/2.0.0/package.tgz',
+323 verbose tar pack   '/var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/package' ]
+324 verbose tarball /Users/bryantwolf/.npm/css-brunch/2.0.0/package.tgz
+325 verbose folder /var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/package
+326 silly lockFile b0cdfcc6-2236-0-08728860830888152-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/package
+327 verbose lock tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552236-0.08728860830888152/package /Users/bryantwolf/.npm/b0cdfcc6-2236-0-08728860830888152-package.lock
+328 silly lockFile 099473fe-npm-css-brunch-2-0-0-package-tgz tar:///Users/bryantwolf/.npm/css-brunch/2.0.0/package.tgz
+329 verbose lock tar:///Users/bryantwolf/.npm/css-brunch/2.0.0/package.tgz /Users/bryantwolf/.npm/099473fe-npm-css-brunch-2-0-0-package-tgz.lock
+330 http 404 https://registry.npmjs.org/phoenix_html
+331 silly registry.get cb [ 404,
+331 silly registry.get   { 'content-type': 'application/json',
+331 silly registry.get     'cache-control': 'max-age=0',
+331 silly registry.get     'content-length': '2',
+331 silly registry.get     'accept-ranges': 'bytes',
+331 silly registry.get     date: 'Sat, 19 Nov 2016 21:39:09 GMT',
+331 silly registry.get     via: '1.1 varnish',
+331 silly registry.get     age: '0',
+331 silly registry.get     connection: 'keep-alive',
+331 silly registry.get     'x-served-by': 'cache-atl6238-ATL',
+331 silly registry.get     'x-cache': 'MISS',
+331 silly registry.get     'x-cache-hits': '0',
+331 silly registry.get     'x-timer': 'S1479591549.050714,VS0,VE267',
+331 silly registry.get     vary: 'Accept-Encoding' } ]
+332 silly lockFile 60752607-52220-0-7018734402954578-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package
+333 silly lockFile 60752607-52220-0-7018734402954578-package tar:///var/folders/sj/_76db4t53ss8ksny3yccbqjw0000gn/T/npm-2454-Kjpr_lew/1479591552220-0.7018734402954578/package
+334 silly lockFile c85a55e9-ean-css-brunch-2-0-0-package-tgz tar:///Users/bryantwolf/.npm/clean-css-brunch/2.0.0/package.tgz
+335 silly lockFile c85a55e9-ean-css-brunch-2-0-0-package-tgz tar:///Users/bryantwolf/.npm/clean-css-brunch/2.0.0/package.tgz
+336 silly lockFile 6de706cb-m-clean-css-brunch-2-0-0-package /Users/bryantwolf/.npm/clean-css-brunch/2.0.0/package
+337 verbose lock /Users/bryantwolf/.npm/clean-css-brunch/2.0.0/package /Users/bryantwolf/.npm/6de706cb-m-clean-css-brunch-2-0-0-package.lock
+338 error TypeError: Object.keys called on non-object
+338 error     at Function.keys (native)
+338 error     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache.js:765:24)
+338 error     at /usr/local/lib/node_modules/npm/lib/cache.js:695:10
+338 error     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:148:7)
+338 error     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:133:7
+338 error     at Object.oncomplete (fs.js:107:15)
+339 error If you need help, you may report this *entire* log,
+339 error including the npm and node versions, at:
+339 error     <http://github.com/npm/npm/issues>
+340 error System Darwin 15.6.0
+341 error command "node" "/usr/local/bin/npm" "install"
+342 error cwd /Users/bryantwolf/workspace/once
+343 error node -v v0.10.26
+344 error npm -v 1.4.3
+345 error type called_on_non_object
+346 verbose exit [ 1, true ]
