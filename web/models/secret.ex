@@ -23,7 +23,7 @@ defmodule Once.Secret do
   defp new_slug do
     slug = MnemonicSlugs.generate_slug(String.to_integer(System.get_env("SLUG_LENGTH")))
     case Repo.get_by(Once.Secret, slug: slug) do
-      { :ok, secret } -> new_slug
+      { :ok, _secret } -> new_slug
       nil -> slug
     end
   end
