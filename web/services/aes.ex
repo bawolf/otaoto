@@ -1,4 +1,4 @@
-defmodule Once.Crypto do
+defmodule Once.AES do
   def encrypt(plain_text) do
     iv = new_iv
     key = new_key
@@ -7,8 +7,8 @@ defmodule Once.Crypto do
     { _state, cipher_text } = :crypto.stream_encrypt(state, to_string(plain_text))
     iv_cipher_text = iv <> cipher_text
 
-    { iv_cipher_text |> Base.encode64,
-      key |> Base.encode64 }
+    %{ cipher_text: iv_cipher_text |> Base.encode64,
+       key: key |> Base.encode64 }
   end
 
   def decrypt(cipher_text_string, key_string) do

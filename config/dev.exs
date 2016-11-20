@@ -14,7 +14,7 @@ config :once, Once.Endpoint,
   watchers: [node: ["node_modules/brunch/bin/brunch", "watch", "--stdin",
                     cd: Path.expand("../", __DIR__)]]
 
-
+config :once, :slug_length, 3
 # Watch static and templates for browser reloading.
 config :once, Once.Endpoint,
   live_reload: [
