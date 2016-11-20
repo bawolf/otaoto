@@ -17,3 +17,5 @@ config :once, Once.Repo,
   database: "once_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :once, :slug_length, 2
