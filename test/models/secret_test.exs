@@ -3,8 +3,8 @@ defmodule Once.SecretTest do
 
   alias Once.{ Secret, Repo }
 
-  @valid_attrs %{ cipher_text: "abcdef123456" }
-  @invalid_attrs %{}
+  @valid_attrs %{ cipher_text: "Np3iOnJMQZeFrMNIQsnxuyFRuoZDJ0jMy0l1nA==",
+                  key: "xgX6qdOSQWJ8HWENp5mAhNNQXsVYOgznja8qKW2pQCk=" }
 
   describe "When provided valid params" do
     test "should create a valid changeset" do
@@ -19,14 +19,24 @@ defmodule Once.SecretTest do
 
       assert is_binary(secret.slug)
       assert String.contains?(secret.slug, "-")
-      assert length(String.split(secret.slug, "-")) == String.to_integer(System.get_env("SLUG_LENGTH"))
+      assert length(String.split(secret.slug, "-")) == Application.get_env(:once, :slug_length)
     end
   end
 
   describe "when provided invalid params such as no cipher_text" do
     test "creates an invalid changeset " do
-      changeset = Secret.changeset(%Secret{}, @invalid_attrs)
+      invalid_attrs = %{ key: "xgX6qdOSQWJ8HWENp5mAhNNQXsVYOgznja8qKW2pQCk=" }
+      changeset = Secret.changeset(%Secret{}, invalid_attrs)
+      
+      refute changeset.valid?
+    end
+  end
 
+  describe "when provided invalid params such as no key" do
+    test "creates an invalid changeset " do
+      invalid_attrs = %{ cipher_text: "Np3iOnJMQZeFrMNIQsnxuyFRuoZDJ0jMy0l1nA==" }
+      changeset = Secret.changeset(%Secret{}, invalid_attrs)
+      
       refute changeset.valid?
     end
   end
