@@ -1,1 +1,10 @@
 /* This file is for your main application css. */
+textarea {
+  resize: vertical;
+  width: 100%;
+  max-width: 100%;
+}
+
+textarea.disabled {
+  resize: none;
+}
