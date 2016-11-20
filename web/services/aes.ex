@@ -7,14 +7,14 @@ defmodule Once.AES do
     { _state, cipher_text } = :crypto.stream_encrypt(state, to_string(plain_text))
     iv_cipher_text = iv <> cipher_text
 
-    %{ cipher_text: iv_cipher_text |> Base.encode64,
-       key: key |> Base.encode64 }
+    %{ cipher_text: iv_cipher_text |> Base.url_encode64,
+       key: key |> Base.url_encode64 }
   end
 
   def decrypt(cipher_text_string, key_string) do
-    case key_string |> Base.decode64 do
+    case key_string |> Base.url_decode64! do
       { :ok, key } -> 
-        case cipher_text_string |> Base.decode64 do
+        case cipher_text_string |> Base.url_decode64! do
           { :ok, iv_cipher } -> decipher(iv_cipher, key)
           :error -> raise "Expected cipher text to be a base64 encoded string"
         end
