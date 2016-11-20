@@ -7,20 +7,16 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Once!</title>
+    <title>One Time And One Time Only - the app for sharing secrets</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
     <div class="container">
       <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
+        <h2>OTAOTO</h2>
       </header>
+      <br />
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
@@ -28,8 +24,11 @@
       <main role="main">
         <%= render @view_module, @view_template, assigns %>
       </main>
-
+      <hr />
+      <footer class="text-center">
+        <span>How It Works - About - <a href="https://github.com/bawolf/otaoto">Source</a></span>
+        <p>©2016 - Bryant Wolf</p>
+      </footer>
     </div> <!-- /container -->
-    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
