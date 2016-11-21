@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <h2><%= link "OTAOTO", to: secret_path(@conn, :new) %></h2>
+        <h2><%= link "One Time And One Time Only", to: secret_path(@conn, :new) %></h2>
       </header>
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
