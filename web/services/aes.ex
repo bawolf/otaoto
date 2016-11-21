@@ -12,13 +12,13 @@ defmodule Once.AES do
   end
 
   def decrypt(cipher_text_string, key_string) do
-    case key_string |> Base.url_decode64! do
+    case key_string |> Base.url_decode64 do
       { :ok, key } -> 
-        case cipher_text_string |> Base.url_decode64! do
+        case cipher_text_string |> Base.url_decode64 do
           { :ok, iv_cipher } -> decipher(iv_cipher, key)
-          :error -> raise "Expected cipher text to be a base64 encoded string"
+          :error -> { :error, "Expected cipher text to be a base64 encoded string" }
         end
-      :error ->  raise "Expected key to be a base64 encoded string"
+      :error -> { :error, "Expected key to be a base64 encoded string" }
     end
   end
 

@@ -18,7 +18,8 @@ defmodule Once.Router do
 
     get "/", SecretController, :new
     get "/confirm", SecretController, :confirm
-    resources "/", SecretController, only: [:new, :create, :show]
+    resources "/", SecretController, only: [:create]
+    get "/:slug/:key", SecretController, :show
   end
 
   # Other scopes may use custom stacks.
