@@ -15,11 +15,29 @@ defmodule Once.SecretController do
       { :ok, secret } ->
         conn
         |> put_flash(:info, "Secret created successfully.")
-        |> render "confirm.html", key: secret_params.key, slug: secret.slug, plain_text: raw_params["plain_text"] 
+        |> render("confirm.html", key: secret_params.key, slug: secret.slug, plain_text: raw_params["plain_text"])
       { :error, changeset } ->
         conn
         |> put_flash(:error, "Could not create secret.")
         |> render("new.html", changeset: changeset)
     end
+  end
+
+  def show(conn, %{ "slug" => slug,"key" => key }) do
+    case Repo.get_by(Secret, slug: slug) do
+      nil ->
+        conn
+        |> render("gone.html")
+      secret ->
+        case AES.decrypt(secret.cipher_text, key) do
+          { :ok, plain_text } ->
+            Repo.delete(secret)
+            conn
+            |> render("show.html", plain_text: plain_text)
+          { :error, _message } -> 
+            conn
+            |> render("gone.html")
+        end
+    end    
   end
 end

@@ -5,6 +5,90 @@ textarea {
   max-width: 100%;
 }
 
-textarea.disabled {
+textarea.readonly {
   resize: none;
+}
+
+//#######################
+
+p { margin-bottom: 1.3rem }
+
+.view-secret {
+    padding-left: 1em;
+    padding-right: 1em; 
+}
+
+.secret-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 3rem;
+    position: relative;
+    *zoom: 1;
+}
+
+.secret-container:before, .secret-container:after {
+    content: "";
+    display: table;
+}
+
+.secret-container:after { clear: both }
+
+.secret-container section:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+section {
+    -webkit-transition: .125s linear;
+    -moz-transition: .125s linear;
+    -ms-transition: .125s linear;
+    -o-transition: .125s linear;
+    transition: .125s linear;
+}
+
+input[type=checkbox] {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+[for="show_secret"] {
+    position: absolute;
+    bottom: -3rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: .65rem;
+    box-shadow: inset 1px 1px rgba(0, 0, 0, 0.1), inset -1px -1px rgba(0, 0, 0, 0.1);
+}
+
+[for="show_secret"]:hover {
+    background: rgba(0,0,0,.5);
+    color: rgb(255,255,255);
+}
+
+[for="show_secret"] span:last-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ section {
+    display: block;
+    visibility: visible;
+    width: 100%;
+}
+
+input[type=checkbox]:checked ~ [for="show_secret"] span:first-of-type {
+    display: none;
+    visibility: hidden;
+}
+
+input[type=checkbox]:checked ~ [for="show_secret"] span:last-of-type {
+    display: block;
+    visibility: visible;
 }
