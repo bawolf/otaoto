@@ -14,11 +14,11 @@ defmodule Once.SecretController do
     case Repo.insert(changeset) do
       { :ok, secret } ->
         conn
-        |> put_flash(:info, "Secret created successfully.")
+        |> put_flash(:info, "You created a secret!")
         |> render("confirm.html", key: secret_params.key, slug: secret.slug, plain_text: raw_params["plain_text"])
       { :error, changeset } ->
         conn
-        |> put_flash(:error, "Could not create secret.")
+        |> put_flash(:error, "We could not create your secret.")
         |> render("new.html", changeset: changeset)
     end
   end
