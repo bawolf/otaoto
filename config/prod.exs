@@ -20,4 +20,4 @@ config :once, Once.Repo,
 config :once, Once.Endpoint,
   secret_key_base: System.get_env("SECRET_KEY_BASE")
 
-config :once, :slug_length, String.to_integer(System.get_env("SLUG_LENGTH"))
+config :once, :slug_length, String.to_integer(System.get_env("SLUG_LENGTH") || "3")
