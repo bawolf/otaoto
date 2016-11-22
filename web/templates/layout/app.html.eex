@@ -15,7 +15,7 @@
     <nav class="navbar navbar-default">
       <a href="<%=secret_path(@conn, :new) %>">
         <div class="navbar-header logo">
-          <img src='images/logo.png'>
+          <img src='/images/logo.png'>
         </div>
       </a>
     </nav>
