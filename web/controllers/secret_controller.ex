@@ -14,7 +14,7 @@ defmodule Once.SecretController do
     case Repo.insert(changeset) do
       { :ok, secret } ->
         conn
-        |> put_flash(:info, "You created a secret!")
+        # |> put_flash(:info, "You created a secret!")
         |> render("confirm.html", key: secret_params.key, slug: secret.slug, plain_text: raw_params["plain_text"])
       { :error, changeset } ->
         conn

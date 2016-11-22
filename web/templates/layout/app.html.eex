@@ -13,9 +13,11 @@
 
   <body>
     <nav class="navbar navbar-default">
-      <div class="navbar-header">
-        <%= link "One Time and One Time Only", to: secret_path(@conn, :new), class: "navbar-brand" %>
-      </div>
+      <a href="<%=secret_path(@conn, :new) %>">
+        <div class="navbar-header logo">
+          <img src='images/logo.png'>
+        </div>
+      </a>
     </nav>
     <div class="container">
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
