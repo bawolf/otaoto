@@ -8,6 +8,7 @@
     <meta name="author" content="">
 
     <title>One Time And One Time Only - the app for sharing secrets</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
