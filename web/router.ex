@@ -17,9 +17,9 @@ defmodule Once.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", SecretController, :new
-    get "/confirm", SecretController, :confirm
     resources "/", SecretController, only: [:create]
-    get "/:slug/:key", SecretController, :show
+    get "/show/:slug/:key", SecretController, :show
+    get "/gone", SecretController, :gone
   end
 
   # Other scopes may use custom stacks.

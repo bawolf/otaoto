@@ -34,24 +34,20 @@ defmodule Once.AESTest do
     test "a key that is not a base 64 encoded string raises an error" do
       cipher_text = "Np3iOnJMQZeFrMNIQsnxuyFRuoZDJ0jMy0l1nA=="
       key = "bad-string"
-
-      assert_raise RuntimeError, "Expected key to be a base64 encoded string", fn ->
-        AES.decrypt(cipher_text, key)
-      end
+      
+      assert AES.decrypt(cipher_text, key) == { :error, "Expected key to be a base64 encoded string" }
     end
 
     test "a cipher text that is not a base 64 encoded string raises an error" do
       cipher_text = "bad-cipher-text"
       key = "xgX6qdOSQWJ8HWENp5mAhNNQXsVYOgznja8qKW2pQCk="
 
-      assert_raise RuntimeError, "Expected cipher text to be a base64 encoded string", fn ->
-        AES.decrypt(cipher_text, key)
-      end
+      assert AES.decrypt(cipher_text, key) ==  { :error, "Expected cipher text to be a base64 encoded string" }
     end
 
     test "base64 encoded keys and cipher_text that are NOT compatible return :ok and a bit string" do
       cipher_text = "Np3iOnJMQZeFrMNIQsnxuyFRuoZDJ0jMy0l1nA=="
-      key = "0DuPHPWl/3Yq5F4BH2Zw7uwD9Ao9xdsmEaBv3hTVOO4="
+      key = "fakefakeQWJ8HWENp5mAhNNQXsVYOgznja8qKW2pQCk="
 
       {:ok, result } = AES.decrypt(cipher_text, key)
 

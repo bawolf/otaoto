@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>One Time And One Time Only - the app for sharing secrets</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/css/app.css">
+  </head>
+    <body>
+      <div class="container">
+        <div class="main text-center">
+          <h3 class="headline">This page doesn't exist</h3>
+          <p>Some error occured. There are no secrets here. You might have typed something in wrong or only pasted a partial link</p>
+          <a href="/">Go to the Homepage</a>
+        </div>
+      </div>
+  </body>
+</html>

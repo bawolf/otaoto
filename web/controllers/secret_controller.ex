@@ -14,8 +14,10 @@ defmodule Once.SecretController do
     case Repo.insert(changeset) do
       { :ok, secret } ->
         conn
-        # |> put_flash(:info, "You created a secret!")
-        |> render("confirm.html", key: secret_params.key, slug: secret.slug, plain_text: raw_params["plain_text"])
+        |> render("confirm.html",
+                  key: secret_params.key,
+                  slug: secret.slug,
+                  plain_text: raw_params["plain_text"])
       { :error, changeset } ->
         conn
         |> put_flash(:error, "We could not create your secret.")
@@ -24,10 +26,14 @@ defmodule Once.SecretController do
   end
 
   def show(conn, %{ "slug" => slug,"key" => key }) do
+    if !slug || !key do
+      conn
+      |> redirect(to: secret_path(conn, :gone)) 
+    end
     case Repo.get_by(Secret, slug: slug) do
       nil ->
         conn
-        |> render("gone.html")
+        |> redirect(to: secret_path(conn, :gone))
       secret ->
         case AES.decrypt(secret.cipher_text, key) do
           { :ok, plain_text } ->
@@ -36,8 +42,13 @@ defmodule Once.SecretController do
             |> render("show.html", plain_text: plain_text)
           { :error, _message } -> 
             conn
-            |> render("gone.html")
+            |> redirect(to: secret_path(conn, :gone))
         end
     end    
+  end
+
+  def gone(conn, %{}) do
+    conn
+    |> render("gone.html")
   end
 end
