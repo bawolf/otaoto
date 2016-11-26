@@ -6,6 +6,53 @@ textarea {
   min-height: 5em;
 }
 
+.hiw-title {
+  padding: 3rem 0;
+}
+
+.hiw-step h2 {
+  padding-bottom: 3rem;
+}
+
+.hiw-step p {
+  padding: 3rem;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.section {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  vertical-align: middle;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+// .hiw-panel {
+//   border-radius: 0px;
+//   margin-bottom: 0px;
+// }
+footer {
+  padding-top: 3rem;
+}
+
+.hiw-panel {
+  background-color: #00aeef;
+  color: #fff;
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+
 .navbar-default {
   background-color: white;
 }
@@ -60,13 +107,6 @@ textarea {
 .headline {
   color: #00aeef;
 }
-
-// .metaphor-img {
-//   height: 25em;
-//   width: auto;
-// }
-//show/hide
-//#######################
 
 p { margin-bottom: 1.3rem }
 
