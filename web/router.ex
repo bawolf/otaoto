@@ -1,6 +1,10 @@
 defmodule Once.Router do
   use Once.Web, :router
 
+  pipeline :api do
+    plug :accepts, ["json"]
+  end
+
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -9,22 +13,20 @@ defmodule Once.Router do
     plug :put_secure_browser_headers
   end
 
-  pipeline :api do
-    plug :accepts, ["json"]
+  scope "/api", Once do
+    pipe_through :api
+
+    post "/create", SecretAPIController, :create
+    get "/show/:slug/:key", SecretAPIController, :show
   end
 
   scope "/", Once do
     pipe_through :browser # Use the default browser stack
 
     get "/", SecretController, :new
-    resources "/", SecretController, only: [:create]
+    post "/create", SecretController, :create
     get "/show/:slug/:key", SecretController, :show
     get "/gate/:slug/:key", SecretController, :gate
     get "/gone", SecretController, :gone
   end
-
-  # Other scopes may use custom stacks.
-  # scope "/api", Once do
-  #   pipe_through :api
-  # end
 end
