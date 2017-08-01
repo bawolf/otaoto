@@ -25,6 +25,11 @@ defmodule Once.SecretController do
     end
   end
 
+  def gate(conn, %{ "slug" => slug,"key" => key }) do
+    conn
+    |> render("gate.html", slug: slug, key: key)
+  end
+
   def show(conn, %{ "slug" => slug,"key" => key }) do
     if !slug || !key do
       conn

@@ -18,6 +18,7 @@ config :once, Once.Endpoint,
 config :once, :slug_length, 3
 # Watch static and templates for browser reloading.
 config :once, Once.Endpoint,
+  url: [host: "localhost"],
   live_reload: [
     patterns: [
       ~r{priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$},
