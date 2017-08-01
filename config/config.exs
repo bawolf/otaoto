@@ -11,7 +11,6 @@ config :once,
 
 # Configures the endpoint
 config :once, Once.Endpoint,
-  url: [host: "localhost"],
   secret_key_base: "fCaHY2Y7IoZdYGnki08OHVXGMwyebhQk5HapTC2LeBJ61Z+dPsJf7c54lNDTIBhr",
   render_errors: [view: Once.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Once.PubSub,

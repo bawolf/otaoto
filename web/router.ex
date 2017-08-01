@@ -19,6 +19,7 @@ defmodule Once.Router do
     get "/", SecretController, :new
     resources "/", SecretController, only: [:create]
     get "/show/:slug/:key", SecretController, :show
+    get "/gate/:slug/:key", SecretController, :landing
     get "/gone", SecretController, :gone
   end
 
