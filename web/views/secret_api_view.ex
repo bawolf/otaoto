@@ -10,7 +10,6 @@ defmodule Once.SecretAPIView do
   end
 
   def render("secret.json", %{secret: secret}) do
-    IO.inspect secret
     %{key: secret.key,
       slug: secret.slug,
       link: secret.link}
