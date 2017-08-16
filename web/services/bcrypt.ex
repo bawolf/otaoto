@@ -3,14 +3,12 @@ defmodule Once.Bcrypt do
   alias Ecto.Changeset
 
   def hash_key(changeset) do
-    key = Ecto.Changeset.get_change(changeset, :key)
-
-    if key do
-      hashed_key = Bcrypt.hashpwsalt(key)
-      changeset
-      |> Changeset.put_change(:key_hash, hashed_key)
-    else
-      changeset
+    case Ecto.Changeset.get_change(changeset, :key) do
+      nil ->
+        changeset
+      key ->
+        changeset
+        |> Changeset.put_change(:key_hash, Bcrypt.hashpwsalt(key))
     end
   end
 end

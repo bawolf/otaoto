@@ -1,20 +1,21 @@
 defmodule Once.AES do
   def encrypt(plain_text) do
-    iv = new_iv
-    key = new_key
+    iv = new_iv()
+    key = new_key()
     state = :crypto.stream_init(:aes_ctr, key, iv)
 
-    { _state, cipher_text } = :crypto.stream_encrypt(state, to_string(plain_text))
+    {_state, cipher_text} =
+      :crypto.stream_encrypt(state, to_string(plain_text))
+
     iv_cipher_text = iv <> cipher_text
 
-    %{ cipher_text: iv_cipher_text |> Base.url_encode64,
-       key: key |> Base.url_encode64 }
+    %{cipher_text: Base.url_encode64(iv_cipher_text), key: Base.url_encode64(key)}
   end
 
   def decrypt(cipher_text_string, key_string) do
-    case key_string |> Base.url_decode64 do
+    case Base.url_decode64(key_string) do
       { :ok, key } -> 
-        case cipher_text_string |> Base.url_decode64 do
+        case Base.url_decode64(cipher_text_string) do
           { :ok, iv_cipher } -> decipher(iv_cipher, key)
           :error -> { :error, "Expected cipher text to be a base64 encoded string" }
         end
@@ -26,8 +27,9 @@ defmodule Once.AES do
     <<iv::binary-16, cipher_text::binary>> = iv_cipher
     state = :crypto.stream_init(:aes_ctr, key, iv)
 
-    { _state, plain_text } = :crypto.stream_decrypt(state, cipher_text)
-    { :ok, plain_text }
+    {_state, plain_text} = :crypto.stream_decrypt(state, cipher_text)
+
+    {:ok, plain_text}
   end
 
   defp new_key do
