@@ -13,20 +13,20 @@ defmodule Once.Router do
     plug :put_secure_browser_headers
   end
 
-  scope "/api", Once do
+  scope "/api", Once, as: :api do
     pipe_through :api
 
-    post "/create", SecretAPIController, :create
-    get "/show/:slug/:key", SecretAPIController, :show
+    post "/create", API.SecretController, :create
+    get "/show/:slug/:key", API.SecretController, :show
   end
 
   scope "/", Once do
-    pipe_through :browser # Use the default browser stack
+    pipe_through :browser
 
-    get "/", SecretController, :new
-    post "/create", SecretController, :create
-    get "/show/:slug/:key", SecretController, :show
-    get "/gate/:slug/:key", SecretController, :gate
-    get "/gone", SecretController, :gone
+    get "/", HTML.SecretController, :new
+    post "/create", HTML.SecretController, :create
+    get "/show/:slug/:key", HTML.SecretController, :show
+    get "/gate/:slug/:key", HTML.SecretController, :gate
+    get "/gone", HTML.SecretController, :gone
   end
 end

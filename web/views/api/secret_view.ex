@@ -1,8 +1,8 @@
-defmodule Once.SecretAPIView do
+defmodule Once.API.SecretView do
   use Once.Web, :view
 
   def render("create.json", %{secret: secret}) do
-      %{secret: render_one(secret, Once.SecretAPIView, "secret.json", as: :secret)}
+      %{secret: render_one(secret, Once.API.SecretView, "secret.json", as: :secret)}
   end
 
   def render("show.json", %{plain_text: plain_text}) do
