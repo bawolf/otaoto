@@ -8,10 +8,10 @@ defmodule Once.Secret do
   @derive {Phoenix.Param, key: :id}
 
   schema "secrets" do
-    field :cipher_text, :string
-    field :slug, :string, unique: true
-    field :key_hash, :string
-    field :key, :string, virtual: true
+    field(:cipher_text, :string)
+    field(:slug, :string, unique: true)
+    field(:key_hash, :string)
+    field(:key, :string, virtual: true)
 
     timestamps()
   end
@@ -28,8 +28,9 @@ defmodule Once.Secret do
 
   defp new_slug do
     slug = MnemonicSlugs.generate_slug(Application.get_env(:once, :slug_length))
+
     case Repo.get_by(Once.Secret, slug: slug) do
-      { :ok, _secret } -> new_slug()
+      {:ok, _secret} -> new_slug()
       nil -> slug
     end
   end

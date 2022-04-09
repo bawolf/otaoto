@@ -7,7 +7,7 @@ defmodule Once.TestHelper do
     {:ok, secret} =
       %Secret{}
       |> Secret.changeset(secret_params)
-      |> Repo.insert
+      |> Repo.insert()
 
     %{secret: secret, secret_params: secret_params}
   end

@@ -5,7 +5,7 @@ defmodule Once.HTML.SecretControllerTest do
   alias Once.{Endpoint, Repo, Secret, TestHelper}
 
   test "GET /" do
-    conn = 
+    conn =
       build_conn()
       |> get(secret_path(Endpoint, :new))
 
@@ -27,27 +27,29 @@ defmodule Once.HTML.SecretControllerTest do
   test "GET /gate/:slug/:key" do
     plain_text = "hello, world"
 
-    %{secret: secret, secret_params: secret_params} = 
+    %{secret: secret, secret_params: secret_params} =
       TestHelper.secret_from_plain_text(plain_text)
 
-    assert Repo.one(from s in Secret, select: count("*")) == 1
-    
-    conn = 
+    assert Repo.one(from(s in Secret, select: count("*"))) == 1
+
+    conn =
       build_conn()
       |> get(secret_path(Endpoint, :gate, secret.slug, secret_params.key))
 
     assert html_response(conn, 200) =~ "You Have a Secret!"
     refute html_response(conn, 200) =~ plain_text
-    assert html_response(conn, 200) =~ secret_path(Endpoint, :show, secret.slug, secret_params.key)
+
+    assert html_response(conn, 200) =~
+             secret_path(Endpoint, :show, secret.slug, secret_params.key)
   end
 
   test "GET /gate/:slug/:key - with bad slug and key" do
     slug = "bad_slug"
     key = "bad_key"
 
-    assert Repo.one(from s in Secret, select: count("*")) == 0
-    
-    conn = 
+    assert Repo.one(from(s in Secret, select: count("*"))) == 0
+
+    conn =
       build_conn()
       |> get(secret_path(Endpoint, :gate, slug, key))
 
@@ -58,10 +60,10 @@ defmodule Once.HTML.SecretControllerTest do
   test "GET /:slug/:key" do
     plain_text = "hello, world"
 
-    %{secret: secret, secret_params: secret_params} = 
+    %{secret: secret, secret_params: secret_params} =
       TestHelper.secret_from_plain_text(plain_text)
-    
-    conn = 
+
+    conn =
       build_conn()
       |> get(secret_path(Endpoint, :show, secret.slug, secret_params.key))
 
@@ -72,10 +74,9 @@ defmodule Once.HTML.SecretControllerTest do
   test "GET /:slug/:key - with a bad key" do
     plain_text = "hello, world"
 
-    %{secret: secret} = 
-      TestHelper.secret_from_plain_text(plain_text)
-    
-    conn = 
+    %{secret: secret} = TestHelper.secret_from_plain_text(plain_text)
+
+    conn =
       build_conn()
       |> get(secret_path(Endpoint, :show, secret.slug, "bad key"))
 
@@ -86,13 +87,13 @@ defmodule Once.HTML.SecretControllerTest do
   test "GET /:slug/:key - with a used key" do
     plain_text = "hello, world"
 
-    %{secret: secret, secret_params: secret_params} = 
+    %{secret: secret, secret_params: secret_params} =
       TestHelper.secret_from_plain_text(plain_text)
-    
+
     build_conn()
     |> get(secret_path(Endpoint, :show, secret.slug, secret_params.key))
 
-    conn_2 = 
+    conn_2 =
       build_conn()
       |> get(secret_path(Endpoint, :show, secret.slug, secret_params.key))
 

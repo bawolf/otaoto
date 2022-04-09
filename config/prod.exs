@@ -17,7 +17,6 @@ config :once, Once.Repo,
   pool_size: String.to_integer(System.get_env("POOL_SIZE") || "10"),
   ssl: true
 
-config :once, Once.Endpoint,
-  secret_key_base: System.get_env("SECRET_KEY_BASE")
+config :once, Once.Endpoint, secret_key_base: System.get_env("SECRET_KEY_BASE")
 
 config :once, :slug_length, String.to_integer(System.get_env("SLUG_LENGTH") || "3")

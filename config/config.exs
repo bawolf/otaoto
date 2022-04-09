@@ -13,8 +13,7 @@ config :once,
 config :once, Once.Endpoint,
   secret_key_base: "fCaHY2Y7IoZdYGnki08OHVXGMwyebhQk5HapTC2LeBJ61Z+dPsJf7c54lNDTIBhr",
   render_errors: [view: Once.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Once.PubSub,
-           adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Once.PubSub, adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger
 config :logger, :console,
@@ -23,4 +22,4 @@ config :logger, :console,
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env}.exs"
+import_config "#{Mix.env()}.exs"

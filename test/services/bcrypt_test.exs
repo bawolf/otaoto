@@ -6,14 +6,14 @@ defmodule Once.BcryptTest do
     import Ecto.Changeset
 
     schema "fake_users" do
-      field :key_hash
-      field :key, :string, virtual: true
+      field(:key_hash)
+      field(:key, :string, virtual: true)
     end
 
     def create_changeset(changes) do
       %__MODULE__{}
       |> cast(changes, ~w(key))
-      |> Once.Bcrypt.hash_key
+      |> Once.Bcrypt.hash_key()
     end
   end
 

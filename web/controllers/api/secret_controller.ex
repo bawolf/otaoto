@@ -1,31 +1,29 @@
 defmodule Once.API.SecretController do
   use Once.Web, :controller
 
-  action_fallback Once.API.FallbackController
+  action_fallback(Once.API.FallbackController)
 
-  alias Once.{ AES, Repo, Secret }
+  alias Once.{AES, Repo, Secret}
 
-  def create(conn, %{ "secret" => raw_params }) do
+  def create(conn, %{"secret" => raw_params}) do
     secret_params = AES.encrypt(raw_params["plain_text"])
     changeset = Secret.changeset(%Secret{}, secret_params)
 
     with {:ok, secret} <- Repo.insert(changeset) do
-        link = api_secret_url(conn, :show, secret.slug, secret.key)
+      link = api_secret_url(conn, :show, secret.slug, secret.key)
 
-        conn
-        |> put_status(:created)
-        |> render("create.json",
-                  secret: %{key: secret_params.key,
-                            slug: secret.slug,
-                            link: link})
+      conn
+      |> put_status(:created)
+      |> render("create.json",
+        secret: %{key: secret_params.key, slug: secret.slug, link: link}
+      )
     end
   end
 
-  def show(conn, %{ "slug" => slug,"key" => key }) do
-     with :ok <- confirm_existence_of(slug, key),
+  def show(conn, %{"slug" => slug, "key" => key}) do
+    with :ok <- confirm_existence_of(slug, key),
          {:ok, secret} <- secret_from_slug(slug),
-         {:ok, plain_text} <- AES.decrypt(secret.cipher_text, key)
-          do
+         {:ok, plain_text} <- AES.decrypt(secret.cipher_text, key) do
       Repo.delete(secret)
 
       conn

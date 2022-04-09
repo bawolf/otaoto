@@ -11,7 +11,7 @@ defmodule Once do
       # Start the Ecto repository
       supervisor(Once.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(Once.Endpoint, []),
+      supervisor(Once.Endpoint, [])
       # Start your own worker by calling: Once.Worker.start_link(arg1, arg2, arg3)
       # worker(Once.Worker, [arg1, arg2, arg3]),
     ]

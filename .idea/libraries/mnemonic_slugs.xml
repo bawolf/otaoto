@@ -1,0 +1,25 @@
+<component name="libraryTable">
+  <library name="mnemonic_slugs" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/mnemonic_slugs/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/mnemonic_slugs/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/mnemonic_slugs/lib" />
+      <root url="file://$PROJECT_DIR$/deps/mnemonic_slugs/lib" />
+      <root url="file://$PROJECT_DIR$/deps/mnemonic_slugs/lib" />
+      <root url="file://$PROJECT_DIR$/deps/mnemonic_slugs/lib" />
+      <root url="file://$PROJECT_DIR$/deps/mnemonic_slugs/lib" />
+      <root url="file://$PROJECT_DIR$/deps/mnemonic_slugs/lib" />
+    </SOURCES>
+  </library>
+</component>
